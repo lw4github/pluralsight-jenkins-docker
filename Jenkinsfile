@@ -1,5 +1,10 @@
 pipeline {
   agent any
+  
+    environment {
+    DEMO = '1.3'
+  }
+  
   stages {
     stage('stage1') {
       steps {
@@ -11,9 +16,5 @@ pipeline {
           '''
       }
     }
-
-  }
-  environment {
-    DEMO = '1'
   }
 }
