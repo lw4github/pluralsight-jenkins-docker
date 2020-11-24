@@ -9,7 +9,7 @@ pipeline {
                 LOG_LEVEL='INFO'
             }
             parallel {
-                stage('linux-arm64') {
+                stage('linux-arm32') {
                     steps {
                         echo "Building release ${RELEASE} for ${STAGE_NAME} with log level ${LOG_LEVEL}..."
                     }
