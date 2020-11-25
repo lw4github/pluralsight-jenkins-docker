@@ -44,3 +44,14 @@ pipeline {
       }
    }
 }
+
+/*
+ * Run Groovy script - security approval needed
+ * Failure error: Scripts not permitted to use staticMethod java.lang.Math random. Administrators can decide whether to approve or reject this signature.
+ * text is a link, click on it to approve
+
+ * repeat until all errors are clear:
+ * 1) new java.lang.Exception
+ * 2) staticMethod java.lang.Math random
+ * 3) staticMethod jenkins.model.Jenkins getInstance
+*/
