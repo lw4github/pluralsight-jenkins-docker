@@ -33,3 +33,21 @@ pipeline {
       }
    }
 }
+
+/* 
+   withCredentials([string(credentialsId: 'an-api-key', variable: 'API_KEY')]) { ... }
+* put an-api-key secrete value into the variable API_KEY
+* result: the secrete value of an-api-key is masked as ***
+...
+...
+Pipeline] withCredentials
+Masking supported pattern matches of $API_KEY
+[Pipeline] {
+[Pipeline] sh
++ ./m2/demo3/build.sh
+Using API key: ****
+[Pipeline] }
+[Pipeline] // withCredentials
+...
+...
+*/
