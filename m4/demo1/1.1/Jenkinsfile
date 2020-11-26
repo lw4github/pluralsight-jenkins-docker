@@ -1,7 +1,9 @@
 pipeline {
+    /* ToDo: install docer plugins: docker slave
     environment {
         PATH="${JENKINS_HOME}/docker/docker:${PATH}"
     }
+    */
     agent {
         docker {
             image 'mcr.microsoft.com/dotnet/core/sdk:3.1.101'
