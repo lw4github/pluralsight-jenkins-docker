@@ -1,5 +1,5 @@
 pipeline {
-    /* ToDo: install docer plugins: docker slave
+    /* not working
     environment {
         PATH="${JENKINS_HOME}/docker/docker:${PATH}"
     }
